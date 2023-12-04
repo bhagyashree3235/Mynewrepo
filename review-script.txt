@@ -1,0 +1,19 @@
+
+#!/bin/bash
+
+echo "Enter a number"
+read n
+
+temp=$n
+fact=1
+
+while [ $n -gt 1 ]; do
+
+fact= $(($fact*$n))
+
+   ((n--))
+
+done
+
+echo "The factorial of number $temp is $fact"
+
